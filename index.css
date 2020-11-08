@@ -1,0 +1,621 @@
+*{
+    margin: auto;
+    padding: 0;
+}
+.vr-techonology{
+    width: 100%;
+    height: 100%;
+    overflow: hidden ;
+}
+.header-vr {
+    width: 100%;
+    height: 828px;
+    position: relative;
+}
+.header-vr .container{
+    position: relative;
+}
+.header-vr p{
+    color: black;
+}
+ul.header-list {
+    width: 82%;
+    position: absolute;
+    color: white;
+    font-weight: 600;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    list-style: none;
+    z-index: 2;
+    top: 4%;
+    left: 24%;
+    font-size: 20px;
+    cursor: pointer;
+}
+ul.header-list li a {
+    text-decoration: none;
+    color: white;
+}
+ul.header-list li hr{
+    width: 50px;
+    height: 1px;
+    background-color: white;
+    opacity: 0;
+    visibility: hidden;
+    margin-top: 5px;
+    
+}
+ul.header-list li:hover hr{
+    opacity: 1;
+    visibility: visible;
+}
+.bg-video video {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+.search-items-tag {
+    position: absolute;
+    z-index: 2;
+    top: 45%;
+    left: 5%;
+}
+
+.cart {
+    position: absolute;
+    z-index: 2;
+}
+
+.sign-in {
+    position: absolute;
+    z-index: 1;
+}
+.logo-vr img {
+    width: 150px;
+    height: 150px;
+    border-radius: 120px;
+    position: absolute;
+    z-index: 2;
+    top: 1%;
+    left: 10%;
+}
+input.search-items-detail {
+    width: 600px;
+    margin-left: 45%;
+    padding-left: 70px;
+    height: 45px;
+    border-radius: 5px;
+    outline: none;
+    border: #0000ff61 solid 2px;
+    font-size: 20px;
+}
+i.fa.fa-search {
+    position: absolute;
+    z-index: 3;
+    left: 47%;
+    top: 18%;
+    font-size: 28px;
+    color: #0000ffad;
+}
+p.btn-search {
+    position: absolute;
+    right: -45%;
+    top: 3%;
+    font-size: 21px;
+    font-weight: 500;
+    height: 42px;
+    width: 110px;
+    background: #0000ff47;
+    border-radius: 5px;
+    padding-left: 10px;
+    padding-top: 3px;
+}
+.cart {
+    position: absolute;
+    z-index: 2;
+    top: 44%;
+    right: 9%;
+    background: white;
+    height: 46px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+i.fa.fa-cart-plus {
+    color: blue;
+}
+.cart strong {
+    color: blue;
+}
+.sign-in {
+    position: absolute;
+    z-index: 2;
+    top: 44%;
+    right: 0%;
+    background: white;
+    height: 46px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+i.fa.fa-user{
+    color: blue;
+}
+.sign-in strong{
+    color: blue;
+}
+.sign-in p {
+    padding-left: 5px;
+}
+
+/* Product */
+.products {
+    width: 100%;
+    height: 4800px;
+    background-color: #0000000d;
+}
+.products .container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background: white;
+    top: 2%;
+}
+.box-header {
+    width: 100%;
+    height: 200px;
+    position: absolute;
+}
+.list-items {
+    padding-top: 2%;
+    width: 300px;
+    height: 450px;
+    float: left;
+    border: 1px gray solid;
+    border-radius: 5px;
+    position: absolute;
+}
+.list-items p {
+    display: inline;
+    font-size: 20px;
+    font-weight: 600;
+    color: black;
+}
+i.fa.fa-bars {
+    display: inline;
+    font-size: 30px;
+    color: #0000ff9e;
+}
+.list-items ul {
+    list-style: none;
+}
+.list-items ul li {
+    line-height: 40px;
+    font-weight: 700;
+    font-size: 17px;
+    text-transform: uppercase;
+    cursor: pointer;
+    width: 100%;
+    transition: 1s;
+    padding-left: 10%;
+}
+.list-items ul li:hover {
+    background-color: #0000ff78;
+    padding-left: 35%;
+}
+.list-items img {
+    width: 100%;
+    height: 178px;
+}
+/* carousel */
+.carousel-box {
+    height: 449px;
+    width: 800px;
+    position: absolute;
+    left: 30%;
+    border: 1px gray solid;
+    border-radius: 5px;
+}
+.carousel-item img {
+    width: 800px;
+    height: 448px;
+    border-radius: 5px;
+}
+.carousel-item h3,p{
+    color: cornsilk;
+}
+.carousel-item{
+    transition: 1s;
+    cursor: pointer;
+    text-decoration: none;
+}
+.carousel-item:hover{
+    transform: scale(1.1);
+}
+.carousel-item a:hover {
+    color: #0056b3;
+    text-decoration: none;
+}
+/* slide-products */
+.slide-products {
+    position: absolute;
+    top: 13%;
+}
+.slide-products h3{
+    text-transform: uppercase;
+}
+.slide-products p {
+        color: black;
+        font-family: -webkit-pictograph;
+}
+.next-previous i.fa.fa-arrow-left {
+    font-size: 24px;
+    position: absolute;
+    top: 43%;
+    left: 4%;
+    width: 30px;
+    height: 30px;
+    background-color: #0000ff82;
+    padding-left: 5px;
+    border-radius: 20px;
+    cursor: pointer;
+    padding-top: 1px;
+}
+.next-previous i.fa.fa-arrow-right {
+    font-size: 24px;
+    position: absolute;
+    top: 43%;
+    right: 3.5%;
+    width: 30px;
+    height: 30px;
+    background-color: #0000ff82;
+    padding-left: 6px;
+    border-radius: 20px;
+    padding-top: 1px;
+    cursor: pointer;
+}
+.slide-products ul {
+    display: flex;
+    list-style: none;
+    width: 1140px;
+    overflow: hidden;
+}
+.slide-products ul li.items {
+    width: 250px;
+    height: 400px;
+    border: 1px gray solid;
+    border-radius: 5px;
+    margin-left: 35px;
+    cursor: pointer;
+    color: black;
+}
+.slide-products ul li.items a{
+    text-decoration: none;
+}
+.slide-products ul li:hover{
+    box-shadow: 0px 5px 5px 2px black;
+    transition: 0.5s;
+    border: 3px #0000ff82 solid;
+}
+.slide-products ul::before li:hover{
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    
+}
+.slide-products ul li img {
+    width: 240px;
+    height: 200px;
+}
+.slide-products ul li h3 {
+    text-align: center;
+    color: blue;
+    text-decoration: line-through;
+}
+.slide-products ul li h4 {
+    text-align: center;
+    color: blue;
+}
+/* products-item-detail-brand  */
+.products-item-detail-brand {
+    position: absolute;
+    top: 35%;
+    width: 100%;
+    height: 100%;
+}
+.detail-product {
+    width: 100%;
+    height: 100%;
+}
+.main-items-brand {
+    width: 300px;
+    height: 300px;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.main-items-brand a{
+    text-decoration: none;
+    position: relative;
+}
+.main-items-brand img{
+    width: 95%;
+    height: 100%;
+}
+.main-items-brand::before{
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    position: absolute;
+    z-index: 1;
+    opacity: 0.3;
+}
+.main-items-brand h4 {
+    position: absolute;
+    z-index: 2;
+    color: white;
+    top: 110px;
+    left: 20px;
+    opacity: 0;
+    visibility: visible;
+}
+.main-items-brand:hover h4,
+.main-items-brand:hover p{
+    visibility: visible;
+    opacity: 1;
+    transition: 1s;
+}
+.main-items-brand p {
+    position: absolute;
+    top: 43px;
+    font-weight: 500;
+    z-index: 2;
+    color: white;
+    opacity: 0;
+    visibility: visible;
+    width: 96%;
+    left: 20px;
+}
+.main-items-brand:hover{
+    opacity: 1;
+    visibility: visible;
+}
+.main-items-brand:hover img{
+    transform: scale(1.1);
+    transition: 1s;
+}
+.row .col-3{
+    position: absolute;
+    overflow: hidden;
+}
+.items-brand-details{
+    width: 270px;
+    height: 300px;
+    overflow: hidden;
+    cursor: pointer;
+
+}
+.items-brand-details img{
+    border: 1px gray solid;
+}
+.items-brand-details a{
+    text-decoration: none;
+}
+.items-brand-details p{
+    font-weight: 500;
+    z-index: 2;
+    color: black;
+} 
+.items-brand-details h4{
+    z-index: 2;
+    color: black;
+}
+.box-image {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+.items-brand-details img {
+    width: 25%;
+    height: 60%;
+    position: absolute;
+    border-radius: 10px;
+}
+.row .col-8{
+    position: absolute;
+    right: 5%;
+    overflow: hidden;
+}
+.row .col-8 ul{
+    display: flex;
+    list-style: none;
+}
+.row .col-8 ul li:hover img{
+    box-shadow: 0px 3px 5px 2px black;
+    transition: 0.5s;
+}
+.box-content {
+    position: absolute;
+    top: 61%;
+}
+.product-VR-BOX {
+    position: absolute;
+    width: 100%;
+    top: -11%;
+}
+.product-VR-SHINEON{
+    position: relative;
+    top: -2%;
+}
+.product-VR-SAMSUNG{
+    position: relative;
+    top: 5%;
+}
+.product-VR-OCULUS{
+    position: relative;
+    top: 12%;
+}
+.product-VR-LENOVO{
+    position: absolute;
+    top: 25%;
+    width: 100%;
+}
+.VR-KING-share{
+    position: absolute;
+    width: 100%;
+    top: 34%;
+}
+.title-VR {
+    width: 100%;
+    height: 40px;
+    background: #0000ff9c;
+    color: white;
+    text-align: center;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 5%;
+    margin-left: -1.3%;
+}
+.title-VR-famous {
+    width: 100%;
+    height: 70px;
+    background: #0000ff9c;
+    color: white;
+    text-align: center;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 5%;
+    margin-left: -1.3%;
+    margin-top: -4%;
+}
+.detail-product hr{
+    width: 100%;
+    height: 2px;
+    background-color: blue;
+}
+.title-VR-and-see-items p {
+    position: absolute;
+    color: white;
+    z-index: 2;
+    top: 5%;
+    right: 34px;
+    font-size: 20px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.VR-KING-share hr {
+    width: 4px;
+    height: 29px;
+    float: left;
+    margin-top: 0px;
+    margin-left: 23px;
+}
+.VR-KING-share h3 {
+    display: inline;
+    color: #0000ffc2;
+    margin-left: 12px;
+    margin-top: 15px;
+}
+.VR-KING-share .row .col-4 ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+}
+.VR-KING-main-news{
+    overflow: hidden;
+}
+.VR-KING-main-news img {
+    width: 100%;
+    border-radius: 5px;
+    cursor: pointer;
+    height: 250px;
+}
+.VR-KING-main-news h4 {
+    color: white;
+    position: absolute;
+    top: 50%;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.5s;
+    width: 330px;
+    margin-left: 10px;
+    z-index: 1;
+}
+.VR-KING-main-news:hover h4{
+    visibility: visible;
+    opacity: 1;
+    top: 35%;
+}
+.VR-KING-detail-news{
+    cursor: pointer;
+}
+.VR-KING-detail-news img {
+    width: 150px;
+    margin-top: 20px;
+    border-radius: 5px;
+    opacity: 1;
+}
+li.VR-KING-detail-news p{
+    color: black;
+
+}
+li.VR-KING-detail-news .row:hover .col-5 img{
+    opacity: 0.8;
+}
+li.VR-KING-detail-news p {
+    color: black;
+    font-size: 18px;
+    font-weight: 500;
+    font-family: initial;
+}
+ul.news{
+    display: flex;
+    flex-direction: row;
+}
+.flex{
+    display: flex;
+}
+.flex .row ul {
+    list-style: none;
+    width: 86%;
+}
+.flex .row ul li.VR-KING-main-news::after {
+    content: "";
+    width: 350px;
+    height: 33%;
+    background: black;
+    position: absolute;
+    display: flex;
+    top: 128px;
+    border-radius: 5px;
+    opacity: 0.5;
+}
+.flex .row ul li{
+    cursor: pointer;
+}
+.register-announcement{
+    position: absolute;
+    top: 85%;
+}
+.col-7{
+    position: relative;
+}
+i.fa.fa-envelope {
+    position: absolute;
+    font-size: 60px;
+    color: #0000ffcc;
+}
+.col-7 h4 {
+    position: absolute;
+    left: 20%;
+}
+.col-7 h2 {
+    position: absolute;
+    left: 70%;
+    top: -13%;
+    color: blue;
+}
